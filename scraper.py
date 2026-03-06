@@ -47,8 +47,7 @@ PRODUCTS_QUERY_KEYS = [
     "vehicle[version]",
     "vehicle[sold_from_year]",
 ]
-HTTP_MAX_RETRIES = 1
-HTTP_RETRY_DELAY_SECONDS = 1.5
+HTTP_CONNECT_TIMEOUT_SECONDS = 10
 
 _DEVNULL_STREAM = None
 
@@ -89,6 +88,7 @@ def build_http_session_from_driver(driver: webdriver.Chrome) -> requests.Session
         "Referer": LOGIN_URL,
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
+        "Connection": "close",
     })
     return session
 
@@ -180,80 +180,85 @@ def extract_results_via_http(driver: webdriver.Chrome, filters: list[str], timeo
     if not filters:
         return [], None, "No hay filtros para construir la consulta"
 
-    last_error = None
-    last_url = None
-    attempts = HTTP_MAX_RETRIES + 1
+    effective_timeout = max(1, timeout)
+    request_timeout = (min(HTTP_CONNECT_TIMEOUT_SECONDS, effective_timeout), effective_timeout)
+    started_at = time.perf_counter()
 
-    for attempt in range(1, attempts + 1):
+    try:
         session = build_http_session_from_driver(driver)
-        first_url = build_products_url(filters)
+    except Exception as e:
+        return [], None, f"No se pudo crear sesión HTTP desde Selenium: {e}"
 
+    first_url = build_products_url(filters)
+
+    try:
+        response = session.get(first_url, timeout=request_timeout)
+    except Exception as e:
+        return [], None, f"Error HTTP inicial: {e}"
+
+    if response.status_code != 200:
+        return [], response.url, f"HTTP {response.status_code} en consulta inicial"
+
+    combined_codes = extract_codes_from_products_html(response.text)
+    total_items = extract_total_items_from_products_html(response.text)
+    final_url = response.url
+
+    visited_urls = {response.url}
+    next_url = extract_next_page_url_from_html(response.text, response.url)
+
+    while next_url and next_url not in visited_urls:
+        if time.perf_counter() - started_at >= effective_timeout:
+            return _dedupe_keep_order(combined_codes), final_url, f"Timeout global de extracción agotado ({effective_timeout}s)"
         try:
-            response = session.get(first_url, timeout=timeout)
+            page_response = session.get(next_url, timeout=request_timeout)
         except Exception as e:
-            last_error = f"Error HTTP inicial: {e}"
-            if attempt < attempts:
-                print(f"⚠️ Intento HTTP {attempt}/{attempts} fallido: {last_error}. Reintentando...")
-                time.sleep(HTTP_RETRY_DELAY_SECONDS)
-                continue
-            return [], None, f"{last_error} (agotados {attempts} intentos)"
+            return _dedupe_keep_order(combined_codes), final_url, f"Error HTTP en paginación: {e}"
 
-        if response.status_code != 200:
-            last_url = response.url
-            last_error = f"HTTP {response.status_code} en consulta inicial"
-            if attempt < attempts:
-                print(f"⚠️ Intento HTTP {attempt}/{attempts} fallido: {last_error}. Reintentando...")
-                time.sleep(HTTP_RETRY_DELAY_SECONDS)
-                continue
-            return [], last_url, f"{last_error} (agotados {attempts} intentos)"
+        if page_response.status_code != 200:
+            return _dedupe_keep_order(combined_codes), final_url, f"HTTP {page_response.status_code} en paginación"
 
-        combined_codes = extract_codes_from_products_html(response.text)
-        total_items = extract_total_items_from_products_html(response.text)
-        final_url = response.url
+        visited_urls.add(page_response.url)
+        final_url = page_response.url
+        page_codes = extract_codes_from_products_html(page_response.text)
+        combined_codes.extend(page_codes)
+        next_url = extract_next_page_url_from_html(page_response.text, page_response.url)
 
-        visited_urls = {response.url}
-        next_url = extract_next_page_url_from_html(response.text, response.url)
-        page_error = None
+    unique_codes = _dedupe_keep_order(combined_codes)
+    if total_items and len(unique_codes) < min(total_items, 24):
+        return unique_codes, final_url, "Extracción parcial detectada: revisar selectores HTML"
 
-        while next_url and next_url not in visited_urls:
-            try:
-                page_response = session.get(next_url, timeout=timeout)
-            except Exception as e:
-                page_error = f"Error HTTP en paginación: {e}"
-                break
+    return unique_codes, final_url, None
 
-            if page_response.status_code != 200:
-                page_error = f"HTTP {page_response.status_code} en paginación"
-                break
 
-            visited_urls.add(page_response.url)
-            final_url = page_response.url
-            page_codes = extract_codes_from_products_html(page_response.text)
-            combined_codes.extend(page_codes)
-            next_url = extract_next_page_url_from_html(page_response.text, page_response.url)
+def save_failed_to_csv(data: dict, filename: str = "resultados_failed.csv") -> None:
+    file_exists = False
+    try:
+        with open(filename, "r", encoding="utf-8"):
+            file_exists = True
+    except FileNotFoundError:
+        pass
 
-        if page_error:
-            last_error = page_error
-            last_url = final_url
-            if attempt < attempts:
-                print(f"⚠️ Intento HTTP {attempt}/{attempts} fallido: {last_error}. Reintentando...")
-                time.sleep(HTTP_RETRY_DELAY_SECONDS)
-                continue
-            return _dedupe_keep_order(combined_codes), final_url, f"{last_error} (agotados {attempts} intentos)"
+    fieldnames = ["Segmento", "Marca", "Modelo", "Versión", "Año", "error", "processing_seconds"]
 
-        unique_codes = _dedupe_keep_order(combined_codes)
-        if total_items and len(unique_codes) < min(total_items, 24):
-            last_error = "Extracción parcial detectada: revisar selectores HTML"
-            last_url = final_url
-            if attempt < attempts:
-                print(f"⚠️ Intento HTTP {attempt}/{attempts} con extracción parcial. Reintentando...")
-                time.sleep(HTTP_RETRY_DELAY_SECONDS)
-                continue
-            return unique_codes, final_url, f"{last_error} (agotados {attempts} intentos)"
+    with open(filename, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        if not file_exists:
+            writer.writeheader()
 
-        return unique_codes, final_url, None
+        filters = data.get("filters", [])
+        processing_seconds = data.get("processing_seconds")
+        row = {
+            "Segmento": filters[0] if len(filters) > 0 else "",
+            "Marca": filters[1] if len(filters) > 1 else "",
+            "Modelo": filters[2] if len(filters) > 2 else "",
+            "Versión": filters[3] if len(filters) > 3 else "",
+            "Año": filters[4] if len(filters) > 4 else "",
+            "error": data.get("error", ""),
+            "processing_seconds": "" if processing_seconds is None else f"{processing_seconds:.4f}",
+        }
+        writer.writerow(row)
 
-    return [], last_url, last_error or "Error HTTP desconocido"
+    print(f"  ⚠️ Guardado fallido en {filename}")
 
 
 def enable_silent_mode() -> None:
@@ -657,7 +662,15 @@ def search_specific(driver: webdriver.Chrome, specific_indices: list[int], resul
         print("  🌐 Extrayendo resultados vía HTTP...")
         codes, products_url, extraction_error = extract_results_via_http(driver, current_values, timeout)
         if extraction_error:
-            raise RuntimeError(f"Extracción HTTP fallida para {current_values}: {extraction_error}")
+            failed_data = {
+                "indices": specific_indices,
+                "filters": current_values,
+                "error": extraction_error,
+                "processing_seconds": time.perf_counter() - operation_start,
+            }
+            save_failed_to_csv(failed_data)
+            print(f"⚠️ Búsqueda específica omitida por error de extracción: {extraction_error}")
+            return
         
         print(f"✅ Búsqueda específica completada. {len(codes)} códigos encontrados.")
         print(f"  Códigos: {codes}")
@@ -677,7 +690,14 @@ def search_specific(driver: webdriver.Chrome, specific_indices: list[int], resul
 
     except Exception as e:
         print(f"❌ Error al ejecutar la búsqueda final: {e}")
-        raise
+        failed_data = {
+            "indices": specific_indices,
+            "filters": current_values,
+            "error": str(e),
+            "processing_seconds": time.perf_counter() - operation_start,
+        }
+        save_failed_to_csv(failed_data)
+        return
 
 
 def explore_combinations(driver: webdriver.Chrome, timeout: int, depth: int, current_indices: list[int], current_values: list[str], results: list, dev_mode: bool = False, resume_state: dict = None, only_options: bool = False) -> bool:
@@ -840,7 +860,15 @@ def explore_combinations(driver: webdriver.Chrome, timeout: int, depth: int, cur
         try:
             codes, products_url, extraction_error = extract_results_via_http(driver, current_values, timeout)
             if extraction_error:
-                raise RuntimeError(f"Extracción HTTP fallida para {current_values}: {extraction_error}")
+                failed_data = {
+                    "indices": current_indices.copy(),
+                    "filters": current_values.copy(),
+                    "error": extraction_error,
+                    "processing_seconds": time.perf_counter() - operation_start,
+                }
+                save_failed_to_csv(failed_data)
+                print(f"⚠️ Combinación omitida por error de extracción: {extraction_error}")
+                return False
             
             result_data = {
                 "indices": current_indices.copy(),
@@ -856,7 +884,14 @@ def explore_combinations(driver: webdriver.Chrome, timeout: int, depth: int, cur
             
         except Exception as e:
             print(f"❌ Error al ejecutar búsqueda: {e}")
-            raise
+            failed_data = {
+                "indices": current_indices.copy(),
+                "filters": current_values.copy(),
+                "error": str(e),
+                "processing_seconds": time.perf_counter() - operation_start,
+            }
+            save_failed_to_csv(failed_data)
+            return False
 
     return False
 
