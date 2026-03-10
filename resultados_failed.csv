@@ -1,0 +1,383 @@
+Segmento,Marca,Modelo,Versión,Año,error,processing_seconds
+AUTOMÓVILES,LEXUS,RX,2.4 F-SPORT,,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0918
+AUTOMÓVILES,LOTUS,EXIGE SPORT,3.5 350CV ROADSTER,2020,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0685
+AUTOMÓVILES,LOTUS,EXIGE SPORT,3.5 350CV ROADSTER,2021,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0625
+AUTOMÓVILES,MERCEDES BENZ,CLASE E,E300 3.0D,1993,HTTP 502 en consulta inicial,0.0764
+AUTOMÓVILES,MERCEDES BENZ,CLASE E,E300 3.0D,1994,HTTP 502 en consulta inicial,1.9857
+AUTOMÓVILES,MERCEDES BENZ,CLASE E,E300 3.0D,1996,Timeout global de extracción agotado (10s),10.8298
+AUTOMÓVILES,MERCEDES BENZ,CLASE E,E300 3.0D,1997,Timeout global de extracción agotado (10s),11.0463
+AUTOMÓVILES,MERCEDES BENZ,CLASE E,E300 3.0D,1998,Timeout global de extracción agotado (10s),10.9152
+AUTOMÓVILES,MERCEDES BENZ,CLASE E,E300 3.0D,1999,Timeout global de extracción agotado (10s),12.5734
+AUTOMÓVILES,MERCEDES BENZ,CLASE E,E300 3.0D,2000,Timeout global de extracción agotado (10s),10.1526
+AUTOMÓVILES,MITSUBISHI,GALANT,,,Timeout global de extracción agotado (10s),16.3327
+AUTOMÓVILES,MITSUBISHI,OUTLANDER,2.4,2005,Timeout global de extracción agotado (10s),10.6104
+AUTOMÓVILES,NISSAN,MARCH,1.6 16V,2012,Timeout global de extracción agotado (10s),13.5116
+AUTOMÓVILES,NISSAN,MARCH,1.6 16V,2014,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0579
+AUTOMÓVILES,NISSAN,MARCH,1.6 16V,2015,Timeout global de extracción agotado (10s),12.4668
+AUTOMÓVILES,NISSAN,TIIDA,1.8 16V,2007,Timeout global de extracción agotado (10s),12.2112
+AUTOMÓVILES,PEUGEOT,106,1.4I,1995,Timeout global de extracción agotado (10s),12.7002
+AUTOMÓVILES,PEUGEOT,205,1.4I,1993,Timeout global de extracción agotado (10s),13.3750
+AUTOMÓVILES,PEUGEOT,205,1.4I,1996,Timeout global de extracción agotado (10s),13.7965
+AUTOMÓVILES,PEUGEOT,206,1.4I,2001,Timeout global de extracción agotado (10s),12.3066
+AUTOMÓVILES,PEUGEOT,206,1.4I,2002,Timeout global de extracción agotado (10s),10.2570
+AUTOMÓVILES,PEUGEOT,206,1.6 16V,2002,Timeout global de extracción agotado (10s),13.4001
+AUTOMÓVILES,PEUGEOT,206,1.6 8V,1999,Timeout global de extracción agotado (10s),12.4625
+AUTOMÓVILES,PEUGEOT,206,1.6 8V,2000,Timeout global de extracción agotado (10s),10.1042
+AUTOMÓVILES,PEUGEOT,206,1.9D,1999,Timeout global de extracción agotado (10s),12.2759
+AUTOMÓVILES,PEUGEOT,206,2.0 16V,2001,Timeout global de extracción agotado (10s),14.1866
+AUTOMÓVILES,PEUGEOT,206,2.0 16V,2002,Timeout global de extracción agotado (10s),11.1507
+AUTOMÓVILES,PEUGEOT,206,2.0 GTI,2003,Timeout global de extracción agotado (10s),12.4104
+AUTOMÓVILES,PEUGEOT,206,2.0 GTI 180 CV,2003,Timeout global de extracción agotado (10s),13.0800
+AUTOMÓVILES,PEUGEOT,206,2.0 HDI,2000,Timeout global de extracción agotado (10s),12.7321
+AUTOMÓVILES,PEUGEOT,206,2.0 RC,2005,Timeout global de extracción agotado (10s),12.2393
+AUTOMÓVILES,PEUGEOT,207,1.4 HDI,2011,Timeout global de extracción agotado (10s),11.6312
+AUTOMÓVILES,PEUGEOT,207,1.4 HDI,2012,Timeout global de extracción agotado (10s),10.8430
+AUTOMÓVILES,PEUGEOT,207,1.4I,2008,Timeout global de extracción agotado (10s),11.9302
+AUTOMÓVILES,PEUGEOT,207,1.6 16V,2008,Timeout global de extracción agotado (10s),11.7778
+AUTOMÓVILES,PEUGEOT,207,1.6 16V,2009,Timeout global de extracción agotado (10s),10.2097
+AUTOMÓVILES,PEUGEOT,207,1.6 THP 150CV,2008,Timeout global de extracción agotado (10s),13.8701
+AUTOMÓVILES,PEUGEOT,207,1.6 THP 175CV,2009,Timeout global de extracción agotado (10s),13.5406
+AUTOMÓVILES,PEUGEOT,207,1.9D,2008,Timeout global de extracción agotado (10s),12.5555
+AUTOMÓVILES,PEUGEOT,207,1.9D,2009,Timeout global de extracción agotado (10s),10.7909
+AUTOMÓVILES,PEUGEOT,207,1.9D,2010,Timeout global de extracción agotado (10s),12.1732
+AUTOMÓVILES,PEUGEOT,207,1.9D,2011,Timeout global de extracción agotado (10s),10.7726
+AUTOMÓVILES,PEUGEOT,207,2.0 HDI,2008,Timeout global de extracción agotado (10s),12.8238
+AUTOMÓVILES,PEUGEOT,208,1.5I,2013,Timeout global de extracción agotado (10s),13.2357
+AUTOMÓVILES,PEUGEOT,208,1.6 VTI,2013,Timeout global de extracción agotado (10s),12.5669
+AUTOMÓVILES,PEUGEOT,301,1.6 HDI 92CV,2017,Timeout global de extracción agotado (10s),14.7345
+AUTOMÓVILES,PEUGEOT,306,1.4I,1996,Timeout global de extracción agotado (10s),12.7895
+AUTOMÓVILES,PEUGEOT,306,1.6,1995,Timeout global de extracción agotado (10s),12.5364
+AUTOMÓVILES,PEUGEOT,306,1.8 16V,1997,Timeout global de extracción agotado (10s),12.6895
+AUTOMÓVILES,PEUGEOT,306,1.8 16V,1998,Timeout global de extracción agotado (10s),15.4994
+AUTOMÓVILES,PEUGEOT,306,1.8 8V,1998,Timeout global de extracción agotado (10s),12.9142
+AUTOMÓVILES,PEUGEOT,306,1.9 TD,,Timeout global de extracción agotado (10s),12.1966
+AUTOMÓVILES,PEUGEOT,306,1.9 XSD,1995,Timeout global de extracción agotado (10s),12.9776
+AUTOMÓVILES,PEUGEOT,306,1.9 XSDT,1995,Timeout global de extracción agotado (10s),12.7253
+AUTOMÓVILES,PEUGEOT,306,1.9D,1999,Timeout global de extracción agotado (10s),12.9289
+AUTOMÓVILES,PEUGEOT,306,2.0,1995,Timeout global de extracción agotado (10s),12.6252
+AUTOMÓVILES,PEUGEOT,306,2.0,1997,Timeout global de extracción agotado (10s),12.6740
+AUTOMÓVILES,PEUGEOT,306,2.0 16V,1997,Timeout global de extracción agotado (10s),12.5230
+AUTOMÓVILES,PEUGEOT,306,2.0 HDI,2000,Timeout global de extracción agotado (10s),13.4488
+AUTOMÓVILES,PEUGEOT,306,2.0 HDI,2001,Timeout global de extracción agotado (10s),11.9429
+AUTOMÓVILES,PEUGEOT,307,1.6 110CV,2001,Timeout global de extracción agotado (10s),13.0918
+AUTOMÓVILES,PEUGEOT,307,1.6 110CV,2002,Timeout global de extracción agotado (10s),10.4528
+AUTOMÓVILES,PEUGEOT,307,1.6 HDI,2005,Timeout global de extracción agotado (10s),13.4611
+AUTOMÓVILES,PEUGEOT,307,1.6 HDI,2006,Timeout global de extracción agotado (10s),10.9803
+AUTOMÓVILES,PEUGEOT,307,2.0,2001,Timeout global de extracción agotado (10s),12.9433
+AUTOMÓVILES,PEUGEOT,307,2.0,2002,Timeout global de extracción agotado (10s),10.0388
+AUTOMÓVILES,PEUGEOT,307,2.0 138CV,2005,Timeout global de extracción agotado (10s),13.3633
+AUTOMÓVILES,PEUGEOT,307,2.0 143CV,2005,Timeout global de extracción agotado (10s),12.9569
+AUTOMÓVILES,PEUGEOT,307,2.0 180CV,2005,Timeout global de extracción agotado (10s),12.2605
+AUTOMÓVILES,PEUGEOT,307,2.0 HDI,2001,Timeout global de extracción agotado (10s),11.8673
+AUTOMÓVILES,PEUGEOT,307,2.0 HDI,2002,Timeout global de extracción agotado (10s),11.4865
+AUTOMÓVILES,PEUGEOT,307,2.0 HDI 110CV,2006,Timeout global de extracción agotado (10s),12.5879
+AUTOMÓVILES,PEUGEOT,307,2.0 HDI 90CV,2006,Timeout global de extracción agotado (10s),13.9325
+AUTOMÓVILES,PEUGEOT,307,2.0 HDI 90CV,2007,Timeout global de extracción agotado (10s),10.2728
+AUTOMÓVILES,PEUGEOT,308,1.6 HDI,2011,Timeout global de extracción agotado (10s),11.9971
+AUTOMÓVILES,PEUGEOT,308,1.6 HDI,2015,Timeout global de extracción agotado (10s),11.9851
+AUTOMÓVILES,PEUGEOT,308,1.6 VTI,2011,Timeout global de extracción agotado (10s),12.6184
+AUTOMÓVILES,PEUGEOT,308,1.6 VTI,2015,Timeout global de extracción agotado (10s),12.6336
+AUTOMÓVILES,PEUGEOT,308,2.0 16V,2011,Timeout global de extracción agotado (10s),13.1120
+AUTOMÓVILES,PEUGEOT,308,2.0 16V,2015,Timeout global de extracción agotado (10s),13.3774
+AUTOMÓVILES,PEUGEOT,405,1.6,1992,Timeout global de extracción agotado (10s),11.6645
+AUTOMÓVILES,PEUGEOT,405,1.8,1993,Timeout global de extracción agotado (10s),13.3905
+AUTOMÓVILES,PEUGEOT,405,1.9,1991,Timeout global de extracción agotado (10s),13.0440
+AUTOMÓVILES,PEUGEOT,405,1.9,1992,Timeout global de extracción agotado (10s),12.0769
+AUTOMÓVILES,PEUGEOT,405,1.9,1998,Timeout global de extracción agotado (10s),12.1753
+AUTOMÓVILES,PEUGEOT,405,1.9 SRD,1991,Timeout global de extracción agotado (10s),11.4079
+AUTOMÓVILES,PEUGEOT,405,2.0,1991,Timeout global de extracción agotado (10s),12.3245
+AUTOMÓVILES,PEUGEOT,406,1.8,1996,Timeout global de extracción agotado (10s),12.6391
+AUTOMÓVILES,PEUGEOT,406,1.9 TD,1991,Timeout global de extracción agotado (10s),12.6802
+AUTOMÓVILES,PEUGEOT,406,2.0,1996,Timeout global de extracción agotado (10s),13.0430
+AUTOMÓVILES,PEUGEOT,406,2.0 (138CV),2000,Timeout global de extracción agotado (10s),13.5489
+AUTOMÓVILES,PEUGEOT,406,2.0 HDI,2000,Timeout global de extracción agotado (10s),12.7289
+AUTOMÓVILES,PEUGEOT,406,2.0 ST,1999,Timeout global de extracción agotado (10s),13.9661
+AUTOMÓVILES,PEUGEOT,406,2.1 TD,1999,Timeout global de extracción agotado (10s),12.3327
+AUTOMÓVILES,PEUGEOT,406,2.2,2001,Timeout global de extracción agotado (10s),13.4594
+AUTOMÓVILES,PEUGEOT,407,2.0,2006,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.3338
+AUTOMÓVILES,PEUGEOT,408,1.6 HDI,2011,Timeout global de extracción agotado (10s),13.5195
+AUTOMÓVILES,PEUGEOT,408,1.6 HDI,2015,Timeout global de extracción agotado (10s),15.6827
+AUTOMÓVILES,PEUGEOT,408,1.6 THP 163CV,2011,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0545
+AUTOMÓVILES,PEUGEOT,408,1.6 THP 163CV,2015,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.3916
+AUTOMÓVILES,PEUGEOT,508,2.2 HDI 200CV,2012,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0539
+AUTOMÓVILES,PEUGEOT,605,2.1 TDI,1992,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0488
+AUTOMÓVILES,PEUGEOT,806,2.0,1993,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0464
+AUTOMÓVILES,PEUGEOT,806,2.0,1994,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0696
+AUTOMÓVILES,PEUGEOT,806,2.0 ST,2000,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.8420
+AUTOMÓVILES,PEUGEOT,2008,1.6 THP 165CV,2016,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.9712
+AUTOMÓVILES,PEUGEOT,2008,1.6 THP 165CV TIPTRONIC,,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.8839
+AUTOMÓVILES,PEUGEOT,2008,1.6 VTI,2019,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0705
+AUTOMÓVILES,PEUGEOT,2008,1.6 VTI,2020,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0610
+AUTOMÓVILES,PEUGEOT,3008,2.0 HDI,2013,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",17.9094
+AUTOMÓVILES,PEUGEOT,EXPERT,1.6 HDI,2008,Timeout global de extracción agotado (10s),14.3564
+AUTOMÓVILES,PEUGEOT,EXPERT,1.9D,1999,Timeout global de extracción agotado (10s),12.5052
+AUTOMÓVILES,PEUGEOT,PARTNER,1.4I,2002,Timeout global de extracción agotado (10s),12.9550
+AUTOMÓVILES,PEUGEOT,PARTNER,1.4I,2003,Timeout global de extracción agotado (10s),11.0226
+AUTOMÓVILES,PEUGEOT,PARTNER,1.4I,2010,Timeout global de extracción agotado (10s),13.7990
+AUTOMÓVILES,PEUGEOT,PARTNER,1.4I,2011,Timeout global de extracción agotado (10s),12.1883
+AUTOMÓVILES,PEUGEOT,PARTNER,1.6 16V,,Timeout global de extracción agotado (10s),12.0055
+AUTOMÓVILES,PEUGEOT,PARTNER,1.6 HDI,2010,Timeout global de extracción agotado (10s),12.8888
+AUTOMÓVILES,PEUGEOT,PARTNER,1.6 HDI,2011,Timeout global de extracción agotado (10s),15.1250
+AUTOMÓVILES,PEUGEOT,PARTNER,1.6 HDI,2012,Timeout global de extracción agotado (10s),12.2097
+AUTOMÓVILES,PEUGEOT,PARTNER,1.6 N,2003,Timeout global de extracción agotado (10s),13.0377
+AUTOMÓVILES,PEUGEOT,PARTNER,1.8 8V,1998,Timeout global de extracción agotado (10s),12.7603
+AUTOMÓVILES,PEUGEOT,PARTNER,1.9D,1998,Timeout global de extracción agotado (10s),12.3408
+AUTOMÓVILES,PEUGEOT,PARTNER,1.9D,2002,Timeout global de extracción agotado (10s),12.2395
+AUTOMÓVILES,PEUGEOT,PARTNER,1.9D,2003,Timeout global de extracción agotado (10s),11.0600
+AUTOMÓVILES,PEUGEOT,PARTNER,1.9D,2011,Timeout global de extracción agotado (10s),12.5402
+AUTOMÓVILES,PEUGEOT,PARTNER,2.0 HDI,2002,Timeout global de extracción agotado (10s),12.4164
+AUTOMÓVILES,PEUGEOT,PARTNER,2.0 HDI,2003,Timeout global de extracción agotado (10s),11.3592
+AUTOMÓVILES,RENAULT,CLIO,1.2 16V,1999,Timeout global de extracción agotado (10s),11.6463
+AUTOMÓVILES,RENAULT,CLIO,1.2 16V,2000,Timeout global de extracción agotado (10s),10.1246
+AUTOMÓVILES,RENAULT,CLIO,1.2 16V,2007,Timeout global de extracción agotado (10s),11.2665
+AUTOMÓVILES,RENAULT,CLIO,1.2 16V,2008,Timeout global de extracción agotado (10s),16.7173
+AUTOMÓVILES,RENAULT,CLIO,1.2 16V,2009,Timeout global de extracción agotado (10s),11.9367
+AUTOMÓVILES,RENAULT,CLIO,1.2 16V,2012,Timeout global de extracción agotado (10s),13.5089
+AUTOMÓVILES,RENAULT,CLIO,1.2 16V,2015,Timeout global de extracción agotado (10s),13.0540
+AUTOMÓVILES,RENAULT,CLIO,1.4,1992,Timeout global de extracción agotado (10s),11.8151
+AUTOMÓVILES,RENAULT,CLIO,1.5 DCI,2001,Timeout global de extracción agotado (10s),12.1166
+AUTOMÓVILES,RENAULT,CLIO,1.5 DCI,2002,Timeout global de extracción agotado (10s),11.1397
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,1999,Timeout global de extracción agotado (10s),11.7215
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,2001,Timeout global de extracción agotado (10s),11.5263
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,2002,Timeout global de extracción agotado (10s),10.3163
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,2003,Timeout global de extracción agotado (10s),12.0680
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,2004,Timeout global de extracción agotado (10s),13.8527
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,2005,Timeout global de extracción agotado (10s),11.0296
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,2006,Timeout global de extracción agotado (10s),12.5178
+AUTOMÓVILES,RENAULT,CLIO,1.6 16V,2009,Timeout global de extracción agotado (10s),12.4744
+AUTOMÓVILES,RENAULT,CLIO,1.6 8V,1999,Timeout global de extracción agotado (10s),12.1578
+AUTOMÓVILES,RENAULT,CLIO,1.6I,1991,Timeout global de extracción agotado (10s),12.5109
+AUTOMÓVILES,RENAULT,CLIO,1.6I,1994,Timeout global de extracción agotado (10s),10.5806
+AUTOMÓVILES,RENAULT,CLIO,1.8,1995,Timeout global de extracción agotado (10s),12.9354
+AUTOMÓVILES,RENAULT,CLIO,1.9D,1993,Timeout global de extracción agotado (10s),12.6166
+AUTOMÓVILES,RENAULT,CLIO,1.9D,1995,Timeout global de extracción agotado (10s),11.8291
+AUTOMÓVILES,RENAULT,CLIO,1.9D,1996,Timeout global de extracción agotado (10s),12.4339
+AUTOMÓVILES,RENAULT,CLIO,1.9D,1997,Timeout global de extracción agotado (10s),11.2479
+AUTOMÓVILES,RENAULT,CLIO,1.9D,1998,Timeout global de extracción agotado (10s),12.5019
+AUTOMÓVILES,RENAULT,CLIO,1.9D,1999,Timeout global de extracción agotado (10s),12.0225
+AUTOMÓVILES,RENAULT,CLIO,1.9D,2000,Timeout global de extracción agotado (10s),10.6661
+AUTOMÓVILES,RENAULT,CLIO,2.0,2000,Timeout global de extracción agotado (10s),12.3861
+AUTOMÓVILES,RENAULT,CLIO,2.0,2001,Timeout global de extracción agotado (10s),12.4245
+AUTOMÓVILES,RENAULT,DUSTER,1.6 16V,2011,Timeout global de extracción agotado (10s),12.1490
+AUTOMÓVILES,RENAULT,DUSTER,1.6 16V,2012,Timeout global de extracción agotado (10s),10.8934
+AUTOMÓVILES,RENAULT,DUSTER,1.6 16V,2015,Timeout global de extracción agotado (10s),13.3185
+AUTOMÓVILES,RENAULT,DUSTER,1.6 16V,2016,Timeout global de extracción agotado (10s),11.1986
+AUTOMÓVILES,RENAULT,DUSTER,2.0 16V,2011,Timeout global de extracción agotado (10s),13.3980
+AUTOMÓVILES,RENAULT,DUSTER,2.0 16V,2013,Timeout global de extracción agotado (10s),12.6080
+AUTOMÓVILES,RENAULT,DUSTER,2.0 16V,2014,Timeout global de extracción agotado (10s),13.3926
+AUTOMÓVILES,RENAULT,DUSTER,2.0 16V,2016,Timeout global de extracción agotado (10s),11.9649
+AUTOMÓVILES,RENAULT,DUSTER,2.0 16V,2018,Timeout global de extracción agotado (10s),13.1444
+AUTOMÓVILES,RENAULT,EXPRESS,1.9D,1995,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0675
+AUTOMÓVILES,RENAULT,EXPRESS,1.9D,1996,Timeout global de extracción agotado (10s),10.8744
+AUTOMÓVILES,RENAULT,FLUENCE,1.6 16V,2010,Timeout global de extracción agotado (10s),12.1509
+AUTOMÓVILES,RENAULT,FLUENCE,1.6 16V,2014,Timeout global de extracción agotado (10s),15.0159
+AUTOMÓVILES,RENAULT,FLUENCE,1.6 16V,2015,Timeout global de extracción agotado (10s),13.6122
+AUTOMÓVILES,RENAULT,FLUENCE,1.6 16V,2017,Timeout global de extracción agotado (10s),13.5808
+AUTOMÓVILES,RENAULT,KANGOO,,,Timeout global de extracción agotado (10s),12.6998
+AUTOMÓVILES,RENAULT,LAGUNA,1.9 DCI PRIVILEGE,2003,Timeout global de extracción agotado (10s),13.0860
+AUTOMÓVILES,RENAULT,LAGUNA,2.0,1994,Timeout global de extracción agotado (10s),12.3827
+AUTOMÓVILES,RENAULT,LAGUNA,2.0,1996,Timeout global de extracción agotado (10s),12.3927
+AUTOMÓVILES,RENAULT,LAGUNA,2.0,1998,Timeout global de extracción agotado (10s),12.3646
+AUTOMÓVILES,RENAULT,LAGUNA,2.0,1999,Timeout global de extracción agotado (10s),13.5319
+AUTOMÓVILES,RENAULT,LAGUNA,2.0,2000,Timeout global de extracción agotado (10s),12.6925
+AUTOMÓVILES,RENAULT,LAGUNA,2.2D,1996,Timeout global de extracción agotado (10s),12.7711
+AUTOMÓVILES,RENAULT,LOGAN,1.5 DCI,2007,Timeout global de extracción agotado (10s),11.5351
+AUTOMÓVILES,RENAULT,LOGAN,1.5 DCI,2011,Timeout global de extracción agotado (10s),11.9119
+AUTOMÓVILES,RENAULT,LOGAN,1.6 16V,2007,Timeout global de extracción agotado (10s),11.9826
+AUTOMÓVILES,RENAULT,LOGAN,1.6 16V,2013,Timeout global de extracción agotado (10s),11.9576
+AUTOMÓVILES,RENAULT,LOGAN,1.6 8V,2008,Timeout global de extracción agotado (10s),12.0382
+AUTOMÓVILES,RENAULT,LOGAN,1.6 8V,2013,Timeout global de extracción agotado (10s),11.6989
+AUTOMÓVILES,RENAULT,LOGAN,1.6 8V,2015,Timeout global de extracción agotado (10s),11.3752
+AUTOMÓVILES,RENAULT,MASTER,2.5 DCI,2006,Timeout global de extracción agotado (10s),13.1912
+AUTOMÓVILES,RENAULT,MASTER,2.5 DCI,2007,Timeout global de extracción agotado (10s),10.2517
+AUTOMÓVILES,RENAULT,MASTER,2.5 DCI,2009,Timeout global de extracción agotado (10s),11.3128
+AUTOMÓVILES,RENAULT,MASTER,2.5 DCI,2010,Timeout global de extracción agotado (10s),11.5192
+AUTOMÓVILES,RENAULT,MASTER,2.5D,1998,Timeout global de extracción agotado (10s),11.2656
+AUTOMÓVILES,RENAULT,MASTER,2.8 TD,1999,Timeout global de extracción agotado (10s),11.1013
+AUTOMÓVILES,RENAULT,MASTER,2.8D ASPIRADA,2003,Timeout global de extracción agotado (10s),12.3780
+AUTOMÓVILES,RENAULT,MEGANE,1.5 DCI,2006,Timeout global de extracción agotado (10s),11.6082
+AUTOMÓVILES,RENAULT,MEGANE,1.5 DCI,2007,Timeout global de extracción agotado (10s),10.8380
+AUTOMÓVILES,RENAULT,MEGANE,1.6 110CV,2000,Timeout global de extracción agotado (10s),12.4594
+AUTOMÓVILES,RENAULT,MEGANE,1.6 16V,1999,Timeout global de extracción agotado (10s),11.6590
+AUTOMÓVILES,RENAULT,MEGANE,1.6 16V,2000,Timeout global de extracción agotado (10s),15.2938
+AUTOMÓVILES,RENAULT,MEGANE,1.6 16V,2006,Timeout global de extracción agotado (10s),11.7146
+AUTOMÓVILES,RENAULT,MEGANE,1.6 16V,2007,Timeout global de extracción agotado (10s),15.7824
+AUTOMÓVILES,RENAULT,MEGANE,1.6 16V,2008,Timeout global de extracción agotado (10s),13.9930
+AUTOMÓVILES,RENAULT,MEGANE,1.6 16V,2010,Timeout global de extracción agotado (10s),12.6124
+AUTOMÓVILES,RENAULT,MEGANE,1.6 16V,2015,Timeout global de extracción agotado (10s),13.2022
+AUTOMÓVILES,RENAULT,MEGANE,1.6 8V,1998,Timeout global de extracción agotado (10s),12.6467
+AUTOMÓVILES,RENAULT,MEGANE,1.6 8V,1999,Timeout global de extracción agotado (10s),10.8439
+AUTOMÓVILES,RENAULT,MEGANE,1.9 DCI,2005,Timeout global de extracción agotado (10s),11.7833
+AUTOMÓVILES,RENAULT,MEGANE,1.9 DCI,2006,Timeout global de extracción agotado (10s),11.6458
+AUTOMÓVILES,RENAULT,MEGANE,1.9 DCI,2007,Timeout global de extracción agotado (10s),11.7760
+AUTOMÓVILES,RENAULT,MEGANE,1.9 DCI,2008,Timeout global de extracción agotado (10s),12.1471
+AUTOMÓVILES,RENAULT,MEGANE,1.9 DTI,1999,Timeout global de extracción agotado (10s),12.6058
+AUTOMÓVILES,RENAULT,MEGANE,1.9 DTI,2000,Timeout global de extracción agotado (10s),10.7258
+AUTOMÓVILES,RENAULT,MEGANE,1.9 DTI,2002,Timeout global de extracción agotado (10s),12.1506
+AUTOMÓVILES,RENAULT,MEGANE,1.9 TD,1998,Timeout global de extracción agotado (10s),12.0745
+AUTOMÓVILES,RENAULT,MEGANE,2.0,1997,Timeout global de extracción agotado (10s),13.1117
+AUTOMÓVILES,RENAULT,MEGANE,2.0,1998,Timeout global de extracción agotado (10s),11.3307
+AUTOMÓVILES,RENAULT,MEGANE,2.0 115CV,1997,Timeout global de extracción agotado (10s),13.1696
+AUTOMÓVILES,RENAULT,MEGANE,2.0 150CV,1997,Timeout global de extracción agotado (10s),12.7028
+AUTOMÓVILES,RENAULT,MEGANE,2.0 16V,2002,Timeout global de extracción agotado (10s),11.7335
+AUTOMÓVILES,RENAULT,MEGANE,2.0 16V,2005,Timeout global de extracción agotado (10s),11.6117
+AUTOMÓVILES,RENAULT,MEGANE,2.0 16V,2006,Timeout global de extracción agotado (10s),17.2145
+AUTOMÓVILES,RENAULT,MEGANE,2.0 16V,2009,Timeout global de extracción agotado (10s),12.0465
+AUTOMÓVILES,RENAULT,MEGANE,2.0 16V,2010,Timeout global de extracción agotado (10s),11.3175
+AUTOMÓVILES,RENAULT,MEGANE,2.0 16V,2011,Timeout global de extracción agotado (10s),12.0879
+AUTOMÓVILES,RENAULT,R11,1.4,1986,Timeout global de extracción agotado (10s),13.1291
+AUTOMÓVILES,RENAULT,R11,1.4,1991,Timeout global de extracción agotado (10s),12.8585
+AUTOMÓVILES,RENAULT,R11,1.4,1992,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",14.4701
+AUTOMÓVILES,RENAULT,R11,1.6,1990,Timeout global de extracción agotado (10s),13.4094
+AUTOMÓVILES,RENAULT,R12,1.4,1983,Timeout global de extracción agotado (10s),11.5432
+AUTOMÓVILES,RENAULT,R12,1.4,1989,Timeout global de extracción agotado (10s),11.5169
+AUTOMÓVILES,RENAULT,R12,1.4,1990,Timeout global de extracción agotado (10s),12.2651
+AUTOMÓVILES,RENAULT,R18,2.2,1983,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.4037
+AUTOMÓVILES,RENAULT,R19,1.6I,1993,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.4985
+AUTOMÓVILES,RENAULT,R19,1.7,1989,Timeout global de extracción agotado (10s),11.8929
+AUTOMÓVILES,RENAULT,R19,1.7,1994,Timeout global de extracción agotado (10s),12.5455
+AUTOMÓVILES,RENAULT,R19,1.8,1993,Timeout global de extracción agotado (10s),12.6731
+AUTOMÓVILES,RENAULT,R19,1.8,1995,Timeout global de extracción agotado (10s),12.5671
+AUTOMÓVILES,RENAULT,R19,1.9D,1994,Timeout global de extracción agotado (10s),12.1188
+AUTOMÓVILES,RENAULT,R19,1.9D,1995,HTTP 500 en consulta inicial,1.3562
+AUTOMÓVILES,RENAULT,R19,1.9D,1996,HTTP 500 en consulta inicial,0.9935
+AUTOMÓVILES,RENAULT,R19,1.9D,1997,HTTP 500 en consulta inicial,0.9623
+AUTOMÓVILES,RENAULT,R19,1.9D,1998,HTTP 500 en consulta inicial,1.1022
+AUTOMÓVILES,RENAULT,R21,,,HTTP 500 en consulta inicial,1.0158
+AUTOMÓVILES,RENAULT,R25,,,HTTP 500 en consulta inicial,0.9306
+AUTOMÓVILES,RENAULT,R9,,,HTTP 500 en consulta inicial,1.1582
+AUTOMÓVILES,RENAULT,SAFRANE,3.0I,1992,HTTP 500 en consulta inicial,0.9917
+AUTOMÓVILES,RENAULT,SAFRANE,3.0I,1994,HTTP 500 en consulta inicial,1.0116
+AUTOMÓVILES,RENAULT,SANDERO,1.5 DCI,2008,Timeout global de extracción agotado (10s),12.1692
+AUTOMÓVILES,RENAULT,SANDERO,1.5 DCI,2009,HTTP 500 en consulta inicial,1.0049
+AUTOMÓVILES,RENAULT,SANDERO,1.5 DCI,2010,HTTP 500 en consulta inicial,0.9655
+AUTOMÓVILES,RENAULT,SANDERO,1.5 DCI,2011,HTTP 500 en consulta inicial,0.9021
+AUTOMÓVILES,RENAULT,SANDERO,1.6 16V,,HTTP 500 en consulta inicial,1.0212
+AUTOMÓVILES,RENAULT,SANDERO,1.6 16V CVT,,HTTP 500 en consulta inicial,0.9793
+AUTOMÓVILES,RENAULT,SANDERO,1.6 16V MT,,HTTP 500 en consulta inicial,1.2109
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2009,HTTP 500 en consulta inicial,0.9399
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2010,HTTP 500 en consulta inicial,1.5672
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2011,HTTP 500 en consulta inicial,1.0803
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2012,HTTP 500 en consulta inicial,0.9661
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2013,HTTP 500 en consulta inicial,0.9218
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2014,HTTP 500 en consulta inicial,0.9754
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2015,HTTP 500 en consulta inicial,1.1345
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2016,HTTP 500 en consulta inicial,0.9047
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2017,HTTP 500 en consulta inicial,1.1388
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2018,HTTP 500 en consulta inicial,0.9425
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2019,HTTP 500 en consulta inicial,1.1041
+AUTOMÓVILES,RENAULT,SANDERO,1.6 8V,2020,HTTP 500 en consulta inicial,1.1270
+AUTOMÓVILES,RENAULT,SANDERO,2.0 16V,,HTTP 500 en consulta inicial,0.9057
+AUTOMÓVILES,RENAULT,SCENIC,,,HTTP 500 en consulta inicial,0.9104
+AUTOMÓVILES,RENAULT,STEPWAY,,,HTTP 500 en consulta inicial,0.9932
+AUTOMÓVILES,RENAULT,SYMBOL,,,HTTP 500 en consulta inicial,0.9515
+AUTOMÓVILES,RENAULT,TWINGO,,,HTTP 500 en consulta inicial,2.7183
+AUTOMÓVILES,ROVER,,,,HTTP 500 en consulta inicial,0.9311
+AUTOMÓVILES,SAAB,,,,HTTP 500 en consulta inicial,1.3837
+AUTOMÓVILES,SEAT,,,,HTTP 500 en consulta inicial,0.9298
+AUTOMÓVILES,SERO ELECTRIC,,,,HTTP 500 en consulta inicial,1.6005
+AUTOMÓVILES,SHINERAY,,,,HTTP 500 en consulta inicial,0.9833
+AUTOMÓVILES,SIAM,,,,HTTP 500 en consulta inicial,0.9537
+AUTOMÓVILES,SMART,,,,HTTP 500 en consulta inicial,0.9148
+AUTOMÓVILES,SOUEAST,,,,HTTP 500 en consulta inicial,1.2410
+AUTOMÓVILES,SUBARU,,,,HTTP 500 en consulta inicial,0.9873
+AUTOMÓVILES,SUZUKI,,,,HTTP 500 en consulta inicial,0.9187
+AUTOMÓVILES,TOYOTA,4 RUNNER,,,HTTP 500 en consulta inicial,0.9573
+AUTOMÓVILES,TOYOTA,86,,,HTTP 500 en consulta inicial,0.9101
+AUTOMÓVILES,TOYOTA,AVENSIS,,,HTTP 500 en consulta inicial,1.3431
+AUTOMÓVILES,TOYOTA,C-HR,,,HTTP 500 en consulta inicial,1.1941
+AUTOMÓVILES,TOYOTA,CAMRY,,,HTTP 500 en consulta inicial,0.9216
+AUTOMÓVILES,TOYOTA,CARINA,,,HTTP 500 en consulta inicial,1.0217
+AUTOMÓVILES,TOYOTA,CELICA,,,HTTP 500 en consulta inicial,1.0363
+AUTOMÓVILES,TOYOTA,COROLLA,1.6,,HTTP 500 en consulta inicial,1.0346
+AUTOMÓVILES,TOYOTA,COROLLA,1.8,,HTTP 500 en consulta inicial,0.9514
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 16V,,HTTP 500 en consulta inicial,0.9314
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 16V CVT,,HTTP 500 en consulta inicial,0.9895
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 16V MT,,HTTP 500 en consulta inicial,0.9639
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2009,HTTP 500 en consulta inicial,0.9043
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2010,HTTP 500 en consulta inicial,0.9316
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2011,HTTP 500 en consulta inicial,1.1522
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2012,Timeout global de extracción agotado (10s),10.5737
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2013,Timeout global de extracción agotado (10s),16.8792
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2014,Timeout global de extracción agotado (10s),10.1404
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2015,Timeout global de extracción agotado (10s),10.2244
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2016,Timeout global de extracción agotado (10s),10.0214
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2017,Timeout global de extracción agotado (10s),11.2410
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2018,Timeout global de extracción agotado (10s),10.1552
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2019,Timeout global de extracción agotado (10s),11.2758
+AUTOMÓVILES,TOYOTA,COROLLA,1.8 HIBRIDO CVT,2020,Timeout global de extracción agotado (10s),11.4398
+AUTOMÓVILES,TOYOTA,COROLLA,2.0 TD,2002,Timeout global de extracción agotado (10s),12.2248
+AUTOMÓVILES,TOYOTA,HILUX,2.8 TDI MT,2016,Timeout global de extracción agotado (10s),13.2743
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TD,2000,Timeout global de extracción agotado (10s),12.9323
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2005,Timeout global de extracción agotado (10s),12.5422
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2006,HTTP 500 en consulta inicial,1.9479
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2007,HTTP 500 en consulta inicial,1.1539
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2008,HTTP 500 en consulta inicial,1.4836
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2009,HTTP 500 en consulta inicial,0.8949
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2010,HTTP 500 en consulta inicial,0.9054
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2011,HTTP 500 en consulta inicial,0.9960
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2013,HTTP 500 en consulta inicial,0.9280
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI,2014,HTTP 500 en consulta inicial,0.9484
+AUTOMÓVILES,TOYOTA,HILUX,3.0 TDI 177CV,,HTTP 500 en consulta inicial,1.2789
+AUTOMÓVILES,TOYOTA,HILUX,3.4 V6,,Timeout global de extracción agotado (10s),13.0988
+AUTOMÓVILES,TOYOTA,INNOVA,,,HTTP 500 en consulta inicial,0.9214
+AUTOMÓVILES,TOYOTA,LAND CRUISER,,,Timeout global de extracción agotado (10s),11.7337
+AUTOMÓVILES,TOYOTA,LITE,,,HTTP 500 en consulta inicial,0.9874
+AUTOMÓVILES,TOYOTA,PASEO,,,HTTP 500 en consulta inicial,0.9882
+AUTOMÓVILES,TOYOTA,PREVIA,,,HTTP 500 en consulta inicial,0.9372
+AUTOMÓVILES,TOYOTA,PRIUS,1.8 HIBRID,,HTTP 500 en consulta inicial,0.9193
+AUTOMÓVILES,TOYOTA,RAV 4,,,HTTP 500 en consulta inicial,0.8660
+AUTOMÓVILES,TOYOTA,SUPRA,,,HTTP 500 en consulta inicial,0.9747
+AUTOMÓVILES,TOYOTA,TERCEL,,,HTTP 500 en consulta inicial,0.9847
+AUTOMÓVILES,TOYOTA,YARIS,,,HTTP 500 en consulta inicial,0.9914
+AUTOMÓVILES,VOLKSWAGEN,,,,HTTP 500 en consulta inicial,0.9109
+AUTOMÓVILES,VOLVO,,,,HTTP 500 en consulta inicial,0.8955
+COMERCIALES LIVIANOS,,,,,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0674
+COMERCIALES PESADOS,AEOLUS,EQ1061T,3.9,,HTTP 500 en consulta inicial,1.1833
+COMERCIALES PESADOS,AEOLUS,EQ1061T5D,,,HTTP 500 en consulta inicial,1.0040
+COMERCIALES PESADOS,AGRALE,,,,HTTP 500 en consulta inicial,0.9061
+COMERCIALES PESADOS,ASTRA,,,,HTTP 500 en consulta inicial,0.9807
+COMERCIALES PESADOS,BYD,,,,HTTP 500 en consulta inicial,1.0000
+COMERCIALES PESADOS,CHEVROLET,6000,6000,1998,HTTP 500 en consulta inicial,0.9558
+COMERCIALES PESADOS,CHEVROLET,6000,6000,1999,HTTP 500 en consulta inicial,0.8753
+COMERCIALES PESADOS,CHEVROLET,6000,6000,2001,HTTP 500 en consulta inicial,0.9277
+COMERCIALES PESADOS,CHEVROLET,6000,6000,2002,HTTP 500 en consulta inicial,0.9035
+COMERCIALES PESADOS,CHEVROLET,6000,6000,2003,HTTP 500 en consulta inicial,1.0803
+COMERCIALES PESADOS,CHEVROLET,6000,6000,2004,HTTP 500 en consulta inicial,0.9411
+COMERCIALES PESADOS,FORD,CARGO,1517,2005,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0801
+COMERCIALES PESADOS,FORD,CARGO,1722 3.9,1999,Timeout global de extracción agotado (10s),12.2357
+COMERCIALES PESADOS,FORD,CARGO,1723 4X2 CD MT 37,2016,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0473
+COMERCIALES PESADOS,FORD,CARGO,1729-37 CD MT,2016,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0632
+COMERCIALES PESADOS,FORD,CARGO,1730 3.9,1999,Timeout global de extracción agotado (10s),12.1720
+COMERCIALES PESADOS,FORD,CARGO,1730 3.9,2004,HTTP 502 en consulta inicial,0.0815
+COMERCIALES PESADOS,FORD,CARGO,1730 3.9,2005,HTTP 502 en consulta inicial,0.2171
+COMERCIALES PESADOS,FORD,CARGO,1731 6X2-53 CN AMT,2018,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0317
+COMERCIALES PESADOS,FORD,CARGO,2525 3.9,1997,Timeout global de extracción agotado (10s),10.5237
+COMERCIALES PESADOS,FORD,CARGO,2525 3.9,1998,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",12.3648
+COMERCIALES PESADOS,FORD,CARGO,2631 3.9,2002,Timeout global de extracción agotado (10s),10.3381
+COMERCIALES PESADOS,FORD,CARGO,2631 3.9,2003,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",12.0523
+COMERCIALES PESADOS,FORD,CARGO,712E,2007,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0504
+COMERCIALES PESADOS,FORD,CARGO,712E,2008,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0889
+COMERCIALES PESADOS,FORD,CARGO,712E,2009,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",12.2751
+COMERCIALES PESADOS,FORD,CARGO,915,1999,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.1116
+COMERCIALES PESADOS,FORD,F-14000,F-14.000,1996,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0573
+COMERCIALES PESADOS,FORD,F-4000,3.9,1999,Timeout global de extracción agotado (10s),11.3576
+COMERCIALES PESADOS,FORD,F-4000,4.3,1993,Timeout global de extracción agotado (10s),12.6064
+COMERCIALES PESADOS,IVECO,EUROCARGO,5.9,2005,Timeout global de extracción agotado (10s),13.5711
+COMERCIALES PESADOS,IVECO,EUROCARGO,5.9,2007,Timeout global de extracción agotado (10s),12.5645
+COMERCIALES PESADOS,IVECO,EUROCARGO,5.9,2008,Timeout global de extracción agotado (10s),12.5232
+COMERCIALES PESADOS,IVECO,EUROCARGO,5.9,2010,Timeout global de extracción agotado (10s),12.1166
+COMERCIALES PESADOS,IVECO,STRALIS,12.9,2012,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.4484
+COMERCIALES PESADOS,IVECO,STRALIS,13.0,2013,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0786
+COMERCIALES PESADOS,IVECO,TECTOR,240E28,2020,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",10.0682
+COMERCIALES PESADOS,MERCEDES BENZ,712,712C,2002,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",12.0226
+COMERCIALES PESADOS,MERCEDES BENZ,712,712C,2003,Timeout global de extracción agotado (10s),15.0378
+COMERCIALES PESADOS,MERCEDES BENZ,712,712C,2004,Timeout global de extracción agotado (10s),22.2177
+COMERCIALES PESADOS,MERCEDES BENZ,1215,1215C,1999,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",16.8213
+COMERCIALES PESADOS,MERCEDES BENZ,1215,1215C,2000,Timeout global de extracción agotado (10s),25.0735
+COMERCIALES PESADOS,MERCEDES BENZ,1218,1218,2000,Timeout global de extracción agotado (10s),19.2544
+COMERCIALES PESADOS,MERCEDES BENZ,1418,1418,1996,Timeout global de extracción agotado (10s),12.1762
+COMERCIALES PESADOS,MERCEDES BENZ,1418,1418,1997,Timeout global de extracción agotado (10s),18.9150
+COMERCIALES PESADOS,MERCEDES BENZ,1418,1418,1998,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",14.3242
+COMERCIALES PESADOS,MERCEDES BENZ,1418,1418,2001,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",12.0877
+COMERCIALES PESADOS,MERCEDES BENZ,1420,1420,1996,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out.",11.1352

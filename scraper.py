@@ -261,6 +261,14 @@ def save_failed_to_csv(data: dict, filename: str = "resultados_failed.csv") -> N
     print(f"  ⚠️ Guardado fallido en {filename}")
 
 
+def is_option_disabled(option) -> bool:
+    disabled_attr = option.get_attribute("disabled")
+    if disabled_attr is not None:
+        return True
+    aria_disabled = (option.get_attribute("aria-disabled") or "").strip().lower()
+    return aria_disabled == "true"
+
+
 def enable_silent_mode() -> None:
     global _DEVNULL_STREAM
     if _DEVNULL_STREAM is None:
@@ -627,7 +635,19 @@ def search_specific(driver: webdriver.Chrome, specific_indices: list[int], resul
             
             # Verificar índice válido
             if index < len(select_obj.options):
-                option_text = select_obj.options[index].text
+                option_elem = select_obj.options[index]
+                option_text = option_elem.text
+                if is_option_disabled(option_elem):
+                    processing_seconds = time.perf_counter() - operation_start
+                    failed_data = {
+                        "indices": specific_indices[: i + 1],
+                        "filters": current_values + [option_text],
+                        "error": "You may not select a disabled option",
+                        "processing_seconds": processing_seconds,
+                    }
+                    save_failed_to_csv(failed_data)
+                    print(f"⚠️ Opción deshabilitada en nivel {i+1}: '{option_text}'.")
+                    return
                 print(f"  ➡️ Nivel {i+1}: Seleccionando '{option_text}' (índice {index})")
                 select_obj.select_by_index(index)
                 current_values.append(option_text)
@@ -786,10 +806,35 @@ def explore_combinations(driver: webdriver.Chrome, timeout: int, depth: int, cur
                         lambda d, xp=xpath: len(Select(d.find_element(By.XPATH, xp)).options) > 1
                     )
                     select_obj = Select(driver.find_element(By.XPATH, xpath))
-                    option_text = select_obj.options[i].text.strip()
+                    option_elem = select_obj.options[i]
+                    option_text = option_elem.text.strip()
+
+                    if is_option_disabled(option_elem):
+                        failed_data = {
+                            "indices": current_indices + [i],
+                            "filters": current_values + [option_text],
+                            "error": "You may not select a disabled option",
+                            "processing_seconds": 0.0,
+                        }
+                        save_failed_to_csv(failed_data)
+                        print(f"{'  ' * depth}⚠️ Opción deshabilitada en nivel {depth + 1}: '{option_text}'.")
+                        continue
 
                     print(f"{'  ' * depth}Nivel {depth + 1}: Seleccionando '{option_text}' ({i}/{num_options-1})")
-                    select_obj.select_by_index(i)
+                    try:
+                        select_obj.select_by_index(i)
+                    except Exception as e:
+                        if "You may not select a disabled option" in str(e):
+                            failed_data = {
+                                "indices": current_indices + [i],
+                                "filters": current_values + [option_text],
+                                "error": "You may not select a disabled option",
+                                "processing_seconds": 0.0,
+                            }
+                            save_failed_to_csv(failed_data)
+                            print(f"{'  ' * depth}⚠️ Opción deshabilitada en nivel {depth + 1}: '{option_text}'.")
+                            continue
+                        raise
                     time.sleep(1)
 
                     if only_options and depth + 1 < len(SELECT_XPATHS):
@@ -997,8 +1042,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--timeout",
         type=int,
-        default=10,
-        help="Tiempo máximo de espera en segundos (por defecto: 10)",
+        default=15,
+        help="Tiempo máximo de espera en segundos (por defecto: 15)",
     )
     parser.add_argument(
         "--visible",
