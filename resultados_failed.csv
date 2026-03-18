@@ -381,3 +381,58 @@ COMERCIALES PESADOS,MERCEDES BENZ,1418,1418,1997,Timeout global de extracción a
 COMERCIALES PESADOS,MERCEDES BENZ,1418,1418,1998,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",14.3242
 COMERCIALES PESADOS,MERCEDES BENZ,1418,1418,2001,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=10)",12.0877
 COMERCIALES PESADOS,MERCEDES BENZ,1420,1420,1996,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out.",11.1352
+COMERCIALES PESADOS,MERCEDES BENZ,921/913/912/914,921/913/912/914,1993,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0781
+COMERCIALES PESADOS,MERCEDES BENZ,ATEGO,1725,2007,Timeout global de extracción agotado (15s),17.6956
+COMERCIALES PESADOS,MERCEDES BENZ,AXOR,3340 K/S,2005,Timeout global de extracción agotado (15s),19.9690
+COMERCIALES PESADOS,MERCEDES BENZ,AXOR,3340K,2007,Timeout global de extracción agotado (15s),16.6921
+COMERCIALES PESADOS,MERCEDES BENZ,LS 2638,LS 2638,2007,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0641
+COMERCIALES PESADOS,MERCEDES BENZ,O 500 M,O 500 M,,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",21.8768
+COMERCIALES PESADOS,SCANIA,L113 CL,L113 CL,1998,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0622
+COMERCIALES PESADOS,SCANIA,SERIE G,G360 A6X2,,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0531
+COMERCIALES PESADOS,SCANIA,SERIE G,G410 8X4,2015,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0706
+COMERCIALES PESADOS,VOLKSWAGEN,VOLKSBUS,17.240 OT,2005,Timeout global de extracción agotado (15s),17.2183
+COMERCIALES PESADOS,VOLKSWAGEN,VOLKSBUS,17.240 OT,2006,Timeout global de extracción agotado (15s),15.8622
+COMERCIALES PESADOS,VOLKSWAGEN,VOLKSBUS,17.240 OT,2007,Timeout global de extracción agotado (15s),17.0826
+COMERCIALES PESADOS,VOLKSWAGEN,VOLKSBUS,18.320 EOT,2016,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0651
+COMERCIALES PESADOS,VOLKSWAGEN,WORKER,13180,,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0651
+COMERCIALES PESADOS,VOLKSWAGEN,WORKER,17210,2005,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",29.1046
+COMERCIALES PESADOS,VOLKSWAGEN,WORKER,6.5,2007,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",21.0167
+COMERCIALES PESADOS,VOLKSWAGEN,WORKER,6.5,2011,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0401
+COMERCIALES PESADOS,VOLKSWAGEN,WORKER,6.5,2012,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",21.2403
+COMERCIALES PESADOS,VOLKSWAGEN,WORKER,9.150 E,2016,"Error HTTP en paginación: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",21.4959
+COMERCIALES PESADOS,VOLKSWAGEN,WORKER,9160 OD,,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0648
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM17 240 4X2,2007,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0597
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM17 240 4X2,2008,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0657
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM17 240 4X2,2009,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0431
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM17 240 4X2,2010,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0537
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 4X2 R,2006,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0722
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 4X2 R,2007,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0537
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 4X2 R,2011,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0558
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 4X2 R,2012,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0503
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 6X2 R,2013,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0796
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 6X2 R,2014,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0643
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 6X2 R,2015,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0676
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM210 6X2 R,2016,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0491
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220,2016,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0743
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220,2017,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0752
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220,2018,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0489
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220,2019,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0458
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 4X2,2017,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0755
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 4X2,2018,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0504
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 4X2,2019,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0464
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 4X2,2020,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0524
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 6X2,2017,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0600
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 6X2,2018,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0472
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 6X2,2019,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0659
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 6X2,2020,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0511
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM220 6X4,,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0580
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM23 210 6X2,2005,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0521
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM23 210 6X2,2006,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0444
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM23 210 6X2,2007,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0491
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM23 240 6X2,2005,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0594
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM23 240 6X2,2006,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0380
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM23 240 6X2,2007,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0583
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM260 4X2 R,2008,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0595
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM260 4X2 R,2009,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0488
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM260 4X2 R,2010,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0521
+COMERCIALES PESADOS,VOLVO,VM-SERIES,VM260 4X2 R,2011,"Error HTTP inicial: HTTPSConnectionPool(host='icepar.specparts.shop', port=443): Read timed out. (read timeout=15)",15.0774
