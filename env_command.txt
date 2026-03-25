@@ -1,1 +1,5 @@
+python -m venv env
+env\Scripts\activate
 $env:PATH += ";C:\Program Files\Tesseract-OCR"  
+set PATH=%PATH%;C:\Program Files\Tesseract-OCR
+python scraper_products_ocr.py "https://icepar.specparts.shop/" --start-page 49 --end-page 72 --auto-close
