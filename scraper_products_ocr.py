@@ -54,6 +54,8 @@ _XPATH_TRANSLATE_LOWER = "abcdefghijklmnopqrstuvwxyzáéíóúüñ"
 ITEMS_PER_PAGE = 24
 OUTPUT_FILENAME = "resultados_productos_ocr.csv"
 FAILED_FILENAME = "resultados_productos_ocr_failed.csv"
+OUTPUT_FILENAME_EXCLUDE_ARTS = "resultados_productos_ocr_no_arts.csv"
+FAILED_FILENAME_EXCLUDE_ARTS = "resultados_productos_ocr_no_arts_failed.csv"
 ARTS_FILENAME = "ARTS_ICEPAR.csv"
 HTTP_CONNECT_TIMEOUT_SECONDS = 10
 
@@ -65,6 +67,12 @@ def build_ranged_output_filename(base_filename: str, start_page: int, end_page: 
     root, ext = os.path.splitext(base_filename)
     page_suffix = f"_pages_{start_page}_{end_page}" if end_page is not None else f"_pages_{start_page}_end"
     return f"{root}{page_suffix}{ext}"
+
+
+def resolve_default_output_filenames(exclude_arts: bool) -> tuple[str, str]:
+    if exclude_arts:
+        return OUTPUT_FILENAME_EXCLUDE_ARTS, FAILED_FILENAME_EXCLUDE_ARTS
+    return OUTPUT_FILENAME, FAILED_FILENAME
 
 
 def _normalize_code(value: str) -> str:
@@ -689,6 +697,20 @@ def load_arts_index(filename: str = ARTS_FILENAME) -> dict[str, dict[str, str]]:
     return arts_index
 
 
+def should_process_product(
+    code: str,
+    processed_codes: set[str],
+    arts_index: dict[str, dict[str, str]],
+    exclude_arts: bool,
+) -> bool:
+    if not code or code in processed_codes:
+        return False
+    code_exists_in_arts = code in arts_index
+    if exclude_arts:
+        return not code_exists_in_arts
+    return code_exists_in_arts
+
+
 def ensure_output_csv_header(filename: str = OUTPUT_FILENAME) -> None:
     fieldnames = output_fieldnames()
     if os.path.exists(filename):
@@ -879,6 +901,7 @@ def scrape_products(
     arts_filename: str,
     start_page: int,
     end_page: int | None,
+    exclude_arts: bool,
 ) -> dict:
     if not setup_ocr():
         return {
@@ -893,8 +916,11 @@ def scrape_products(
     processed_codes = load_processed_codes(output_filename)
     last_processed_page = load_last_processed_page(output_filename)
     arts_index = load_arts_index(arts_filename)
+    filter_mode = "exclude_arts" if exclude_arts else "include_arts"
+    filter_mode_description = "codigos que NO aparecen en ARTS" if exclude_arts else "codigos que SI aparecen en ARTS"
     print(f"Codigos en ARTS cargados: {len(arts_index)}")
     print(f"Codigos ya procesados: {len(processed_codes)}")
+    print(f"Criterio de scraping: {filter_mode_description}")
     if last_processed_page is not None:
         print(f"Ultima pagina guardada en resultados: {last_processed_page}")
         print(f"Si necesitas retomar, usa --start-page {last_processed_page}")
@@ -905,6 +931,7 @@ def scrape_products(
         "title": "Scraping paginado de productos con OCR",
         "success": False,
         "error": None,
+        "filter_mode": filter_mode,
         "data": [],
     }
 
@@ -939,15 +966,14 @@ def scrape_products(
             valid_products = []
             for product in page_products:
                 code = _normalize_code(product.get("code", ""))
-                if not code:
-                    continue
-                if code in processed_codes:
-                    continue
-                if code not in arts_index:
+                if not should_process_product(code, processed_codes, arts_index, exclude_arts):
                     continue
                 valid_products.append(product)
 
-            print(f"  Productos que existen en ARTS y faltan procesar: {len(valid_products)}")
+            if exclude_arts:
+                print(f"  Productos que NO existen en ARTS y faltan procesar: {len(valid_products)}")
+            else:
+                print(f"  Productos que existen en ARTS y faltan procesar: {len(valid_products)}")
 
             for product in valid_products:
                 code = _normalize_code(product.get("code", ""))
@@ -956,7 +982,7 @@ def scrape_products(
                     timeout,
                     session,
                     product,
-                    arts_index[code],
+                    arts_index.get(code, {}),
                     page,
                     ocr_max_images,
                     output_filename,
@@ -1001,12 +1027,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         default=None,
-        help=f"CSV de salida detallado (por defecto: {OUTPUT_FILENAME})",
+        help="CSV de salida detallado. Si se omite, usa un nombre distinto segun el modo seleccionado.",
     )
     parser.add_argument(
         "--failed-output",
         default=None,
-        help=f"CSV de errores (por defecto: {FAILED_FILENAME})",
+        help="CSV de errores. Si se omite, usa un nombre distinto segun el modo seleccionado.",
     )
     parser.add_argument(
         "--arts-file",
@@ -1044,6 +1070,11 @@ def parse_args() -> argparse.Namespace:
         "--json-output",
         help="Ruta opcional para guardar un resumen JSON de la corrida",
     )
+    parser.add_argument(
+        "--exclude-arts",
+        action="store_true",
+        help="Procesa solo productos cuyos codigos no existen en ARTS_ICEPAR.csv",
+    )
     return parser.parse_args()
 
 
@@ -1064,18 +1095,24 @@ def main() -> None:
         print("Error: --end-page no puede ser menor que --start-page.")
         sys.exit(1)
 
+    default_output_filename, default_failed_filename = resolve_default_output_filenames(args.exclude_arts)
+
     resolved_output = args.output or build_ranged_output_filename(
-        OUTPUT_FILENAME,
+        default_output_filename,
         args.start_page,
         args.end_page,
     )
     resolved_failed_output = args.failed_output or build_ranged_output_filename(
-        FAILED_FILENAME,
+        default_failed_filename,
         args.start_page,
         args.end_page,
     )
 
     print(f"Iniciando scraping de productos desde: {args.url}")
+    if args.exclude_arts:
+        print("Modo de scraping: productos fuera de ARTS")
+    else:
+        print("Modo de scraping: productos presentes en ARTS")
     print(f"Salida CSV: {resolved_output}")
     print(f"Salida errores: {resolved_failed_output}")
 
@@ -1090,6 +1127,7 @@ def main() -> None:
         arts_filename=args.arts_file,
         start_page=args.start_page,
         end_page=args.end_page,
+        exclude_arts=args.exclude_arts,
     )
 
     if result["success"]:
