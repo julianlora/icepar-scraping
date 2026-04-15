@@ -1,0 +1,2 @@
+codigo,detail_url,page,error,processing_seconds
+05P1231,https://icepar.specparts.shop/products/detail?slug=lpr_05p1231-31114,640,"HTTPConnectionPool(host='localhost', port=50643): Read timed out. (read timeout=120)",120.0113

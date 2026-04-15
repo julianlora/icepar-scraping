@@ -1,0 +1,12 @@
+codigo,detail_url,page,error,processing_seconds
+40218HOP,https://icepar.specparts.shop/products/detail?slug=sadar_40218hop-35899,28,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0104
+40220HOP,https://icepar.specparts.shop/products/detail?slug=sadar_40220hop-35901,28,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0100
+698,https://icepar.specparts.shop/products/detail?slug=fremec_698-544991,250,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0063
+4005,https://icepar.specparts.shop/products/detail?slug=fremec_4005-545065,251,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0057
+3453,https://icepar.specparts.shop/products/detail?slug=fremec_3453-558993,255,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0086
+3808,https://icepar.specparts.shop/products/detail?slug=fremec_3808-559022,256,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0149
+4085,https://icepar.specparts.shop/products/detail?slug=fremec_4085-559054,256,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0027
+777,https://icepar.specparts.shop/products/detail?slug=fremec_777-559140,258,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0143
+217,https://icepar.specparts.shop/products/detail?slug=fremec_217-559984,259,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0123
+3091,https://icepar.specparts.shop/products/detail?slug=fremec_3091-560005,260,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0140
+3457,https://icepar.specparts.shop/products/detail?slug=fremec_3457-560048,262,"HTTPConnectionPool(host='localhost', port=55853): Read timed out. (read timeout=120)",120.0079

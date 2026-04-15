@@ -1,0 +1,15 @@
+codigo,detail_url,page,error,processing_seconds
+020/1,https://icepar.specparts.shop/products/detail?slug=frenosilent_0201-11601,331,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0100
+071/36,https://icepar.specparts.shop/products/detail?slug=frenosilent_07136-11660,332,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0149
+212/27,https://icepar.specparts.shop/products/detail?slug=frenosilent_21227-11855,340,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0095
+062/69,https://icepar.specparts.shop/products/detail?slug=frenosilent_06269-14101,341,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0089
+LX 4619,https://icepar.specparts.shop/products/detail?slug=mahle_lx4619-75004,580,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0024
+LX 1775,https://icepar.specparts.shop/products/detail?slug=mahle_lx1775-75065,581,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0042
+LX 975,https://icepar.specparts.shop/products/detail?slug=mahle_lx975-75072,581,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0082
+LX 492,https://icepar.specparts.shop/products/detail?slug=mahle_lx492-89473,582,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0090
+LC 3,https://icepar.specparts.shop/products/detail?slug=mahle_lc3-221041,582,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0069
+LX 1096,https://icepar.specparts.shop/products/detail?slug=mahle_lx1096-807696,583,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0062
+LX 1845,https://icepar.specparts.shop/products/detail?slug=mahle_lx1845-807713,583,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0017
+LX 3779,https://icepar.specparts.shop/products/detail?slug=mahle_lx3779-807764,584,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0036
+LX 713,https://icepar.specparts.shop/products/detail?slug=mahle_lx713-807788,585,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0159
+LX 2530,https://icepar.specparts.shop/products/detail?slug=mahle_lx2530-995962,586,"HTTPConnectionPool(host='localhost', port=64415): Read timed out. (read timeout=120)",120.0097
